@@ -46,7 +46,9 @@ var htmltemp = `
 return htmltemp;
 }
 // Aise har page ke liye kar sakte hai by using a common variable as var pages= {yaha par un sare objects ko likh lo like u wrote from line 8 to line 14}
-//and if u do so the change the app.get fucntion as app.get('/:pageName', function (req, res)
+//and if u do so the change the app.get fucntion as app.get('/:pageName', function (req, res) {
+    //res.send(createTemplate(pages[pageName)));
+    //Then u can delete the page1 and page2.html as the enitre file is now as an object that can be used to reduce the code
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
