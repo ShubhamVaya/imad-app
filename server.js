@@ -43,7 +43,7 @@ var htmltemp = `
 </body>
 </html>
 `;
-return htmlTemplate;
+return htmltemp;
 }
 
 app.get('/', function (req, res) {
