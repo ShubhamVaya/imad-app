@@ -57,7 +57,7 @@ var counter = 0;
 app.get('/counter', function (req, res) {
     counter = counter + 1;
     res.send(counter.toString());
-});
+}); //isko khol ke dekhna ho to gotoapp click karke url me "/counter" without quotes daal.
 
 app.get('/page1', function (req, res) {
    res.send(createTemplate(page1));
