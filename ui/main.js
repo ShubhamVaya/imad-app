@@ -19,6 +19,6 @@ button.onclick = function() {
         }
     };
     //making request
-    request.open('GET', 'http://svfuturestar31.imad.hasura-app.io/counter',true);
+    request.open('GET', 'http://svfuturestar31.imad.hasura-app.io/counter', true);
     request.send(null);
     };
