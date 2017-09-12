@@ -1,7 +1,10 @@
+console.log('Loaded!');
+
+
 
 var button = document.getElementById('counter');
 var counter = 0;
-button.Onclick = function() {
+button.onclick = function() {
     
     //crating a request obj.
     var request = new XMLHttpRequest();
@@ -11,7 +14,7 @@ button.Onclick = function() {
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
             //Taking action
-            if(requestStatus === 200) {
+            if(request.status === 200) {
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
